@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Practice Suite">
+    <test name="Checkbox Tests">
+        <classes>
+        	<class name="com.selenium.tests.CheckBoxTest"/>
+            <class name="com.selenium.tests.DropDownTest"/>
+        </classes>
+    </test>
+</suite>
