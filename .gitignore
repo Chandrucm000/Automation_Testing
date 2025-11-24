@@ -1,0 +1,16 @@
+# Eclipse
+.metadata/
+.settings/
+.project
+.classpath
+
+# VSCode
+.vscode/
+
+# Build
+bin/
+target/
+
+# OS
+.DS_Store
+Thumbs.db
