@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.tests.CheckBoxTest">
+      <class name="com.selenium.tests.LoginTest">
         <methods>
-          <include name="CheckBox"/>
-          <include name="setup"/>
-          <include name="quitbrowser"/>
-          <include name="screenshot"/>
+          <include name="loginTest"/>
+          <include name="setupPage"/>
+          <include name="initializeDriver"/>
         </methods>
-      </class> <!-- com.selenium.tests.CheckBoxTest -->
+      </class> <!-- com.selenium.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
