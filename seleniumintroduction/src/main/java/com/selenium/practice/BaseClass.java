@@ -1,38 +1,22 @@
 package com.selenium.practice;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
-import org.testng.annotations.AfterClass;
 
-import utils.ConfigReader;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-    protected WebDriver driver;
+	public static WebDriver driver;
 
-    @BeforeClass
-    public void initializeDriver() {
-
-        String browser = ConfigReader.getProperty("browser");
-
-        if (browser.equalsIgnoreCase("chrome")) {
-            driver = new ChromeDriver();
-        }
-
+    public static void initializeDriver() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts()
-              .implicitlyWait(Duration.ofSeconds(10));
-
-        driver.get(ConfigReader.getProperty("url"));
     }
 
-   /* @AfterClass
-    public void quitDriver() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }*/
+    public static void quitDriver() {
+        driver.quit();
+    }
+	
 }

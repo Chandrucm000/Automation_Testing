@@ -1,21 +1,16 @@
 package com.selenium.tests;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.selenium.practice.BaseClass;
 import com.selenium.practice.CheckBoxPage;
-
-import utils.ScreenshotUtil;
+import com.selenium.practice.ScreenshotUtil;
 
 import java.io.IOException;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class CheckBoxTest extends BaseClass {
@@ -64,10 +59,10 @@ public class CheckBoxTest extends BaseClass {
 	}
 	
 	
-	/*@AfterClass
+	@AfterClass
 	public void quitbrowser()
 	{
 		quitDriver();
-	}*/
+	}
 	
 }

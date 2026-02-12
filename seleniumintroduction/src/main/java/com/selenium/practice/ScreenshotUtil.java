@@ -1,4 +1,4 @@
-package utils;
+package com.selenium.practice;
 
 import java.io.File;
 import java.io.IOException;
